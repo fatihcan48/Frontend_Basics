@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google-1998</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            height: 100vh;
+            background-color: white;
+            color: black;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .row {
+            text-align: center;
+            margin: 0px 5.5%;
+        }
+
+        #row1 p {
+            display: inline;
+            font-size: 16px;
+        }
+
+        #row1 {
+            background-color: rgb(238, 238, 238);
+            margin-top: 2px;
+        }
+
+        #row1 button,
+        input {
+            padding: 1px 6px;
+        }
+
+        #row2 {
+            display: flex;
+            margin-top: 2px;
+        }
+
+        #row2 col {
+            justify-content: center;
+
+        }
+
+        #row2 ul li {
+            list-style: none;
+        }
+
+        #row2 ul li a {
+            color: blue;
+        }
+
+        #row2 #col1 {
+            width: 37%;
+            background-color: #7EE5DA;
+            padding: 10px 0px;
+        }
+
+        #row2 #col2 {
+            flex: 1;
+            background-color: rgb(112, 204, 194);
+            margin-left: 2px;
+            font-size: 13px;
+            padding: 5px 0px;
+        }
+
+        #row2 #col3 {
+            flex: 2;
+            margin-left: 2px;
+            background-color: #62B3AA;
+            font-size: 13px;
+            padding: 2px 0px;
+        }
+        #row2 #col3 button
+        {
+            padding: 1px 6px;
+            margin-right: 10px;
+        }
+        .copyright{
+            font-size: 13;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <img src="img/google-old.jpg" alt="google" width="351" height="113" title="Google">
+        </div>
+        <div class="row" id="row1">
+            <p>Searh the web using Google!</p>
+            <form action="get">
+                <input type="text" size="40">
+            </form>
+            <button type="submit">Google Search</button>
+            <button type="submit">I'm feeling lucky</button>
+        </div>
+
+        <div class="row" id="row2">
+            <div class="col" id="col1">
+                <ul>
+                    <li>Special Searches</li>
+                    <li><a href="#">Stanford Search</a></li>
+                    <li><a href="">Linux Search</a></li>
+                </ul>
+            </div>
+            <div class="col" id="col2">
+                <ul>
+                    <li><a href="#">Help!</a></li>
+                    <li><a href="#">About Google!</a></li>
+                    <li><a href="#">Company Info</a></li>
+                    <li><a href="#">Google! Logos</a></li>
+                </ul>
+            </div>
+            <div class="col" id="col3">
+                <p>Get Google!</p>
+                <p>updates monthly:</p>
+                <input type="email" placeholder="your email"><br>
+                <button type="submit">Subscribe</button>
+                <a href="#">Archive</a>
+            </div>
+        </div>
+        <br>
+        <p class="copyright"><small> Copyright &copy; 1998 Google Inc.</small></p>
+    </div>
+
+
+</body>
+
+</html>
