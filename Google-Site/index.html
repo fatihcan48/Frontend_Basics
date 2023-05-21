@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            height: 100vh;
+            background-color: bisque;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding: 6px;
+            height: 60px;
+            min-width: auto;
+            font-family: Arial, sans-serif;
+        }
+
+        .gmailimages {
+            font-family: Arial, sans-serif;
+            font-size: 13px;
+            padding-right: 15px;
+        }
+
+        .gmailimages a {
+            text-decoration: none;
+            color: black;
+            padding-left: 15px;
+        }
+
+        .gmailimages a:hover {
+            text-decoration: underline;
+        }
+
+        #appsbutton {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 48px;
+            height: 48px;
+            padding: 4px;
+            opacity: 0.7;
+
+        }
+
+        #profilbutton {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 4px;
+            width: 48px;
+            height: 48px;
+            margin-right: 4px;
+        }
+
+        #profilbutton img {
+            border-radius: 50%;
+        }
+
+        .googleimg {
+            display: flex;
+            justify-content: center;
+            min-height: 92px;
+        }
+
+        .search {
+            max-height: 160px;
+            padding: 20px;
+        }
+
+        .searchbar {
+            display: flex;
+            justify-content: center;
+            max-width: 584px;
+            width: auto;
+            min-height: 44px;
+            border: 1px solid #dfe1e5;
+            border-radius: 24px;
+            margin: auto;
+            background-color: white;
+        }
+
+        .searchbar:hover {
+            box-shadow: rgba(0, 0, 0, 0.35) 2px 2px 6px 1px;
+            border: 0px solid rgb(206, 206, 206);
+        }
+
+        .search-icon {
+            display: inline-block;
+            align-self: center;
+            padding-right: 13px;
+        }
+
+        .search-input {
+            display: inline-block;
+            width: 480px;
+            height: 35px;
+            margin-top: 6px;
+            padding-bottom: 6px;
+            border: none;
+            font-size: 16px;
+            font-family: Arial, sans-serif;
+        }
+
+        input:focus {
+            outline-width: 0;
+        }
+
+        .icons {
+            display: inline-block;
+            align-self: center;
+            padding-left: 13px;
+
+        }
+
+        .searchbuttons {
+            margin-top: 18px;
+            text-align: center;
+        }
+
+        .searchbuttons button {
+            height: 36px;
+            padding: 0px 16px;
+            background-color: #f8f9fa;
+            border: 1px solid #f8f9fa;
+            border-radius: 4px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            line-height: 27px;
+            min-width: 54px;
+            text-align: center;
+            cursor: pointer;
+            user-select: none;
+            margin: 11px 4px;
+        }
+
+        .searchbuttons button:hover {
+            border: 1px solid rgb(206, 206, 206);
+        }
+
+        .searchbuttons button:active {
+            border: 1px solid rgb(60, 94, 245);
+        }
+
+        footer {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            position: absolute;
+            bottom: 0px;
+            width: 100%;
+            padding: 0 20px;
+            background-color: #f2f2f2;
+            border-top: #c6c7c9 1px solid;
+        }
+
+        .text {
+            list-style-type: none;
+            padding: 15px;
+        }
+
+        .text a {
+            text-decoration: none;
+            color: #70757A;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            padding-right: 30px;
+
+        }
+
+        .text a:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <nav class="navbar">
+            <div class="gmailimages">
+                <a href="#">Gmail</a>
+                <a href="#">Images</a>
+            </div>
+            <a href="#" id="appsbutton"><img src="img/appsbutton.svg" alt="appbutton" width="16" height="16"></a>
+            <a href="#" id="profilbutton"><img src="img/unnamed.jpg" alt="profil" width="32" height="32"></a>
+        </nav>
+
+        <div class="googleimg">
+            <img src="img/logo.png" alt="Google" width="272">
+        </div>
+
+        <div class="search">
+            <div class="searchbar">
+                <div class="search-icon">
+                    <span><svg xmlns="http://www.w3.org/2000/svg" width="14.58" height="14.58" fill="currentColor"
+                            class="bi bi-search" viewBox="0 0 16 16">
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                        </svg></span>
+                </div>
+                <div>
+                    <input class="search-input" type="text">
+                </div>
+                <div class="icons">
+                    <img src="img/voicelogo.png" alt="logo" width="24" height="24">
+                </div>
+            </div>
+
+            <div class="searchbuttons">
+                <button type="button">Google Search</button>
+                <button type="button">I'm feeling lucky!</button>
+            </div>
+        </div>
+
+        <footer>
+            <div class="text">
+                <a href="#">About</a>
+                <a href="#">Advertising</a>
+                <a href="#">Business</a>
+                <a href="#">How Search Works</a>
+            </div>
+            <div class="text">
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">Settings</a>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>
